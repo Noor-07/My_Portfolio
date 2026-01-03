@@ -114,6 +114,34 @@ nav .right a {
 .skills-section .cells .cell span {
   font-size: 18px;
 }
+/* Section 3: Testimony */
+.testimony-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.testimony-section h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.testimony-section .group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.testimony-section .group .person-details {
+  text-align: center;
+  flex: 2;
+}
+.testimony-section .group .text {
+  flex: 8;
+}
+.testimony-section .group .person-details img {
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 850px) {
   /*Section 1: Hero*/
   .hero-section .text h2 {
@@ -127,6 +155,13 @@ nav .right a {
   }
   .hero-section .headshot img {
     width: 280px;
+  }
+  /* Section 3: Testimony */
+  .testimony-section {
+    text-align: center;
+  }
+  .testimony-section .group {
+    flex-direction: column;
   }
 }
 @media (max-width: 600px) {
