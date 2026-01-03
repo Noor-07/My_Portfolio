@@ -73,10 +73,47 @@ nav .right a {
   justify-content: right;
 }
 .hero-section .headshot img {
-  width: 350px;
+  width: 400px;
   border-radius: 50%;
 }
 
+/*Skills*/
+.skills-section {
+  padding: 50px;
+  margin-bottom: 100px;
+}
+.skills-section h2 {
+  text-align: center;
+  font-size: 35px;
+}
+.skills-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.skills-section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills-section .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+}
+.skills-section .cells .cell img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.skills-section .cells .cell span {
+  font-size: 18px;
+}
 @media (max-width: 850px) {
   /*Section 1: Hero*/
   .hero-section .text h2 {
@@ -108,5 +145,12 @@ nav .right a {
   }
   .hero-section .text h2 {
     font-size: 30px;
+  }
+  /*Section 2: skills */
+  .skills-section {
+    padding: 20px;
+  }
+  .skills-section .cells .cell span {
+    font-size: 14px;
   }
 }
